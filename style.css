@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+body{
+    background-color: #191919;
+}
+
+.navbar{
+    height: 70px;
+    display: flex;
+    background-color: #191919;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: url("logo.png");
+    background-size: contain;
+}
+
+.border{
+    border: 2px solid #191919;
+    border-radius: 10%;
+}
+.border:hover{
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    height: 30px;
+    width: 400px;
+    background-color: #141414;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.search-icon{
+    height: 32px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #6e49ff;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.topics{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+    background-color: #0c0c0c;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.toggle-container span{
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.slider{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    left: 7px;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-container .slider {
+    left: 43px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #265FE8;
+    color: aliceblue;
+    height: 40px;
+    width: 60px;
+    border-radius: 10%;
+}
+
+.complete{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    height: 215px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 2px solid #7E7E7E ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.photo{
+    height: 100%;
+    width: 16%;
+    background-image: url("sakamoto_days.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.description{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 850px;
+    position: relative;
+}
+
+.name{
+    color: #b5cbff;
+    font-size: 20px;
+}
+
+.short-dis{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.short-dis p{
+    margin-left: 4px;
+    margin-right: 20px;
+}
+
+.hd{
+    font-weight: 700;
+    background-color: white;
+    color: #191919;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.plot{
+    color: white;
+    margin-top: 25px;
+}
+
+.play{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    background-color: #265FE8;
+    height: 40px;
+    width: 120px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.bookmark{
+    background-color: #4C4C4C;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 130px;
+}
+
+.direction{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #7E7E7E;
+    font-size: 20px;
+}
+
+.recent{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 1000px;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #93A1C3;
+    font: 20px;
+    border-bottom: 5px solid #1F1F1F;
+}
+
+
+.options{
+    margin-left: 570px;
+    display: flex;
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #93A1C3;
+    padding: 10px;
+    background-color: #1F1F1F;
+    margin-left: 5px;
+    border-radius: 5px ;
+}
+
+.anime{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    height: 400px;
+    width: 1000px;
+}
+
+.anime1{
+    margin-left: 10px;
+    background-color: #1F1F1F;
+    height: 400px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.photo1{
+    background-image: url("SoloLeveling.jpeg");
+    height: 70%;
+    background-size: cover;
+}
+
+.detail1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.ep{
+    background-color: #4C4C4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.name1{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #93A1C3;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+}
+.tv{
+    margin-right: 10px;
+}
+
+.min{
+    margin-left: 10px;
+}
+
+.photo2{
+    background-image: url("One_Piece.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo3{
+    background-image: url("Dr.Stone.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo4{
+    background-image: url("sakamoto_days.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo5{
+    background-image: url("Bleach.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo6{
+    background-image: url("Blue_Box.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo7{
+    background-image: url("Naruto.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo8{
+    background-image: url("DragonBall.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo9{
+    background-image: url("DemonSlayer.jpg");
+    height: 70%;
+    background-size: cover;
+}
+.photo10{
+    background-image: url("JJK.jpg");
+    height: 70%;
+    background-size: cover;
+}
+
+.sidebar{
+    background-color: #202020;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 400px;
+    height: 1090px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    height: 60px;
+}
+
+.today{
+    background-color: #4C4C4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.panels{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    height:150px;
+    display: flex;
+}
+
+.photos1{
+    height: 100%;
+    width: 100px;
+    background-image: url("SoloLeveling.jpeg");
+    background-size: cover;
+}
+
+.num{
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #505050;
+    font-size: 12px;
+}
+
+.name2{
+    color: #93A1C3;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.detail2{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+}
+
+.tv1{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.photos2{
+    height: 100%;
+    width: 100px;
+    background-image: url("One_Piece.jpg");
+    background-size: cover;
+}
+.photos3{
+    height: 100%;
+    width: 100px;
+    background-image: url("Dr.Stone.jpg");
+    background-size: cover;
+}
+.photos4{
+    height: 100%;
+    width: 100px;
+    background-image: url("Bleach.jpg");
+    background-size: cover;
+}
+.photos5{
+    height: 100%;
+    width: 100px;
+    background-image: url("Blue_Box.jpg");
+    background-size: cover;
+}
+.photos6{
+    height: 100%;
+    width: 100px;
+    background-image: url("Naruto.jpg");
+    background-size: cover;
+}
+
+.bot{
+    height: 60px;
+    display: flex;
+    background-color: #232323;
+    color: #969696;
+    font-weight: 700;
+    justify-content: center;
+}
+.bot p{
+    margin-top: 10px;
+    font-size: 14px;
+}
